@@ -1,0 +1,38 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+Front/dist
+BackAPI/dist
+Front/tmp
+BackAPI/tmp
+Front/out-tsc
+BackAPI/out-tsc
+Front/bazel-out
+
+# Node
+BackAPI/node_modules
+Front/node_modules
+Front/npm-debug.log
+Front/yarn-error.log
+
+# IDEs and editors
+Front/.idea/
+Front/.project
+Front/.classpath
+Front/.c9/
+Front/*.launch
+Front/.settings/
+Front/*.sublime-workspace
+
+# Miscellaneous
+Front/.angular/cache
+Front/.sass-cache/
+Front/connect.lock
+Front/coverage
+Front/libpeerconnection.log
+Front/testem.log
+Front/typings
+
+# System files
+.DS_Store
+Thumbs.db
