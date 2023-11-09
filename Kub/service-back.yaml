@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: back-api-service
+spec:
+  type: NodePort
+  ports:
+    - name: back-api-port
+      protocol: TCP
+      port: 80
+      targetPort: 3000
+      nodePort: 30081
+  selector:
+    app: back-api

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-api-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: back-api
+  template:
+    metadata:
+      labels:
+        app: back-api
+    spec:
+      containers:
+        - name: back-api
+          image: shiro19000/info910-back-app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
